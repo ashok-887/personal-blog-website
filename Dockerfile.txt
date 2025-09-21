@@ -1,3 +1,2 @@
-cd /home/ubuntu/website
-docker build -t mywebsite .
-docker run -d -p 8086:80 --name mineweb mywebsite
+FROM ngnix:alpine
+COPY . /usr/share/ngnix/html/
